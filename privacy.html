@@ -41,7 +41,7 @@
 <body>
 <main>
   <h1>Revis Privacy Policy</h1>
-  <p class="meta">Effective date: October 12, 2026</p>
+  <p class="meta">Effective date: October 22, 2026</p>
 
   <p>This Privacy Policy explains how the Revis mobile application and its related services (the "App") handle your information. The App is operated by NouSphere Labs ("we", "us" or the "Service Provider").</p>
 
@@ -49,9 +49,9 @@
     <strong>In short</strong>
     <ul>
       <li>We do not require an account. We do not ask for your name, email or phone number to use the App.</li>
-      <li>Photos you choose are sent to our servers and to our AI processing partners only to create your face swap. We do not keep copies of your photos on our servers.</li>
+      <li>Before your first swap, the App asks for your permission to send the photos you choose to our AI processing partner, WaveSpeed AI. Photos are used only to create your face swap. We do not keep copies of your photos on our servers.</li>
       <li>Your results and history are stored on your device.</li>
-      <li>Analytics run only if you allow tracking in the iOS prompt.</li>
+      <li>We use privacy-friendly product analytics (PostHog, EU servers) that is not linked to your identity. We do not track you across other companies' apps or websites.</li>
       <li>We do not sell your personal information.</li>
     </ul>
   </div>
@@ -59,7 +59,8 @@
   <h2>1. Information we process</h2>
 
   <h3>Photos and videos you select</h3>
-  <p>When you create a face swap, the photo containing your face and the selected template (a photo or video from our catalog, or a photo you choose) are sent over an encrypted connection to our server and then to an AI processing partner that generates the result. These images are used only to produce the result you asked for.</p>
+  <p>When you create a face swap, the photo containing your face and the selected template (a photo or video from our catalog, or a photo you choose) are sent over an encrypted connection to our server and then to our AI processing partner, WaveSpeed AI, which generates the result. These images are used only to produce the result you asked for.</p>
+  <p>The App asks for your explicit permission before your first swap and only sends photos after you agree. If you do not agree, no photos leave your device. To withdraw your permission, stop creating swaps and delete the App, or contact us.</p>
   <p>We do not use your photos to identify you, we do not build facial recognition profiles, and we do not use your photos to train AI models.</p>
 
   <h3>Results and history</h3>
@@ -75,7 +76,11 @@
   <p>The number of free swaps you have left is stored in your device's Keychain.</p>
 
   <h3>Analytics</h3>
-  <p>If you choose "Allow" in the iOS tracking prompt, the App uses Google Analytics for Firebase to collect usage information such as screens viewed, features used, app version, device model, operating system and approximate region. If you choose "Ask App Not to Track", analytics collection is turned off. You can change this at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+  <p>The App uses PostHog, hosted in the European Union, to understand how the App is used. It collects usage events such as features used, swaps started and completed, subscription events and content reports, together with the app version, device model and operating system. Events are tied to a random identifier created by the App, not to your name, email or photos, and are not linked to your identity. Like any internet service, PostHog receives your device's IP address when events are sent; we do not use it to identify you. We do not use analytics data for advertising and we do not track you across other companies' apps or websites, so the App does not show the iOS tracking prompt.</p>
+  <p>We process analytics data on the basis of our legitimate interest in keeping the App working and improving it. You can object at any time by contacting us.</p>
+
+  <h3>Content reports</h3>
+  <p>If you report a result in the App, we receive the reason you selected and whether it was a photo or a video. The reported image or video itself is not sent to us. If you choose to email us more details, we receive your email as described below.</p>
 
   <h3>Messages you send us</h3>
   <p>If you contact us by email, we receive your email address and the content of your message, and we use them only to reply to you.</p>
@@ -85,7 +90,8 @@
     <li>To create the face swaps you request and deliver the results to your device.</li>
     <li>To provide and verify Revis Pro subscriptions.</li>
     <li>To protect the App and its users from fraud and abuse.</li>
-    <li>To understand how the App is used and improve it, only where you have allowed analytics.</li>
+    <li>To understand how the App is used and improve it.</li>
+    <li>To review reports of misuse and keep the App safe.</li>
     <li>To respond to your support requests and to comply with legal obligations.</li>
   </ul>
 
@@ -94,20 +100,20 @@
   <table>
     <tr><th>Provider</th><th>Purpose</th></tr>
     <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers (EU, Frankfurt region)</td></tr>
-    <tr><td><a href="https://www.lightxeditor.com/privacy/">LightX</a></td><td>AI processing of photo face swaps</td></tr>
-    <tr><td><a href="https://wavespeed.ai/static/privacy">WaveSpeed AI</a> and <a href="https://fal.ai/privacy">fal.ai</a></td><td>AI processing of video face swaps</td></tr>
-    <tr><td><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></td><td>Usage analytics, only with your permission</td></tr>
+    <tr><td><a href="https://wavespeed.ai/static/privacy">WaveSpeed AI</a></td><td>AI processing of photo and video face swaps</td></tr>
+    <tr><td><a href="https://posthog.com/privacy">PostHog</a></td><td>Product analytics (EU hosting)</td></tr>
     <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Subscriptions, payments and App Attest</td></tr>
   </table>
-  <p>These providers process data under their own privacy policies. AI processing partners may keep uploaded images and generated results for a limited time to deliver the result, as described in their policies.</p>
+  <p>These providers process data under their own privacy policies. Our AI processing partner may keep uploaded images and generated results for a limited time to deliver the result, as described in its policy. We do not allow our providers to use your photos for advertising.</p>
   <p>We may also disclose information if required by law, or if we believe in good faith that disclosure is necessary to protect our rights, your safety or the safety of others, or to investigate fraud.</p>
 
   <h2>4. Data retention</h2>
   <ul>
-    <li><strong>Photos and videos you select:</strong> not stored on our servers after processing. AI partners keep them only as described in their own policies.</li>
+    <li><strong>Photos and videos you select:</strong> not stored on our servers after processing. WaveSpeed AI keeps them only as described in its own policy.</li>
     <li><strong>Swap job records:</strong> deleted automatically within 7 days.</li>
     <li><strong>App Attest installation records:</strong> kept while needed to protect the service.</li>
-    <li><strong>Analytics data:</strong> kept according to Google Analytics retention settings, up to 14 months.</li>
+    <li><strong>Analytics data:</strong> kept for up to 12 months.</li>
+    <li><strong>Content reports:</strong> kept as long as needed to review the report and protect the App.</li>
     <li><strong>Support emails:</strong> kept as long as needed to resolve your request.</li>
   </ul>
 
