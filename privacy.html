@@ -49,7 +49,8 @@
     <strong>In short</strong>
     <ul>
       <li>We do not require an account. We do not ask for your name, email or phone number to use the App.</li>
-      <li>Before your first swap, the App asks for your permission to send the photos you choose to our AI processing partner, WaveSpeed AI. Photos are used only to create your face swap. We do not keep copies of your photos on our servers.</li>
+      <li>Before your first swap, the App asks for your permission to send the photos you choose to our AI processing partner, WaveSpeed AI. Photos are used only to create your face swap. As soon as your result is on your device, we delete your photos and the result from WaveSpeed AI's servers, and in any case they are deleted within 7 days. We do not keep copies on our own servers.</li>
+      <li>To keep the App safe, photos are automatically checked for nudity, sexual, graphic violent and hateful content before processing.</li>
       <li>Your results and history are stored on your device.</li>
       <li>We use privacy-friendly product analytics (PostHog, EU servers) that is not linked to your identity. We do not track you across other companies' apps or websites.</li>
       <li>We do not sell your personal information.</li>
@@ -60,7 +61,10 @@
 
   <h3>Photos and videos you select</h3>
   <p>When you create a face swap, the photo containing your face and the selected template (a photo or video from our catalog, or a photo you choose) are sent over an encrypted connection to our server and then to our AI processing partner, WaveSpeed AI, which generates the result. These images are used only to produce the result you asked for.</p>
-  <p>The App asks for your explicit permission before your first swap and only sends photos after you agree. If you do not agree, no photos leave your device. To withdraw your permission, stop creating swaps and delete the App, or contact us.</p>
+  <p>A few seconds after the App has downloaded your result, it asks our server to delete the job, including your photos and the result, from WaveSpeed AI. If that request does not go through (for example, because you closed the App or lost your connection), WaveSpeed AI deletes the job automatically within 7 days.</p>
+  <h3>Content safety checks</h3>
+  <p>To prevent abuse, our server checks the photos you send, and photo results before they are returned to you, for nudity, sexual, graphic violent and hateful content using Amazon Rekognition (part of Amazon Web Services, EU region). The check runs automatically, its result is not used to identify you, and the images are not stored by the check. If a photo does not pass, it is not sent to WaveSpeed AI (or a result is deleted from WaveSpeed AI right away) and we record a counter for your installation. After repeated violations, the installation is blocked from creating swaps. You can contact us if you believe this happened by mistake.</p>
+  <p>The App asks for your explicit permission before your first swap and only sends photos after you agree. If you do not agree, no photos leave your device. You can withdraw your permission at any time in the App under Profile &gt; Privacy &gt; AI Processing Permission; the App will then ask again before sending any photo.</p>
   <p>We do not use your photos to identify you, we do not build facial recognition profiles, and we do not use your photos to train AI models.</p>
 
   <h3>Results and history</h3>
@@ -91,7 +95,7 @@
     <li>To provide and verify Revis Pro subscriptions.</li>
     <li>To protect the App and its users from fraud and abuse.</li>
     <li>To understand how the App is used and improve it.</li>
-    <li>To review reports of misuse and keep the App safe.</li>
+    <li>To review reports of misuse, automatically filter objectionable content and keep the App safe.</li>
     <li>To respond to your support requests and to comply with legal obligations.</li>
   </ul>
 
@@ -99,17 +103,18 @@
   <p>We share information only with providers that help us run the App, and only as needed for that purpose:</p>
   <table>
     <tr><th>Provider</th><th>Purpose</th></tr>
-    <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers (EU, Frankfurt region)</td></tr>
+    <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers and automated content safety checks with Amazon Rekognition (EU, Frankfurt region)</td></tr>
     <tr><td><a href="https://wavespeed.ai/static/privacy">WaveSpeed AI</a></td><td>AI processing of photo and video face swaps</td></tr>
     <tr><td><a href="https://posthog.com/privacy">PostHog</a></td><td>Product analytics (EU hosting)</td></tr>
     <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Subscriptions, payments and App Attest</td></tr>
   </table>
-  <p>These providers process data under their own privacy policies. Our AI processing partner may keep uploaded images and generated results for a limited time to deliver the result, as described in its policy. We do not allow our providers to use your photos for advertising.</p>
+  <p>These providers process data under their own privacy policies. We ask our AI processing partner to delete uploaded images and generated results as soon as the result has been delivered; otherwise its own retention period of at most 7 days applies, as described in section 4. We do not allow our providers to use your photos for advertising.</p>
   <p>We may also disclose information if required by law, or if we believe in good faith that disclosure is necessary to protect our rights, your safety or the safety of others, or to investigate fraud.</p>
 
   <h2>4. Data retention</h2>
   <ul>
-    <li><strong>Photos and videos you select:</strong> not stored on our servers after processing. WaveSpeed AI keeps them only as described in its own policy.</li>
+    <li><strong>Photos and videos you select, and your results:</strong> never stored on our own servers. Deleted from WaveSpeed AI as soon as your result is on your device, and at the latest within 7 days.</li>
+    <li><strong>Content safety records:</strong> a count of rejected photos and, if applicable, a block flag for your installation, kept while needed to protect the service.</li>
     <li><strong>Swap job records:</strong> deleted automatically within 7 days.</li>
     <li><strong>App Attest installation records:</strong> kept while needed to protect the service.</li>
     <li><strong>Analytics data:</strong> kept for up to 12 months.</li>
