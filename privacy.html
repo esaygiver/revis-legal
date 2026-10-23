@@ -41,7 +41,7 @@
 <body>
 <main>
   <h1>Revis Privacy Policy</h1>
-  <p class="meta">Effective date: October 22, 2026</p>
+  <p class="meta">Effective date: October 23, 2026</p>
 
   <p>This Privacy Policy explains how the Revis mobile application and its related services (the "App") handle your information. The App is operated by NouSphere Labs ("we", "us" or the "Service Provider").</p>
 
@@ -74,7 +74,7 @@
   <p>To protect the service from abuse, the App uses Apple's App Attest to confirm that requests come from a genuine copy of the App. This creates a random key identifier for your installation that does not reveal who you are. We also keep short-lived records of each swap job (a job ID, its status and the installation identifier) so that only your device can retrieve its own results.</p>
 
   <h3>Purchases</h3>
-  <p>Subscriptions are processed by Apple. We never receive your payment card details. The App sends Apple's transaction information to our server to confirm whether you have an active Revis Pro subscription.</p>
+  <p>Subscriptions are processed by Apple. We never receive your payment card details. We use RevenueCat to manage subscriptions: the App shares Apple's transaction information (such as the product, purchase and renewal dates) with RevenueCat, together with a random identifier created by RevenueCat that is not linked to your name or email, so that your Revis Pro access can be confirmed and restored. The App also sends Apple's transaction information to our server to confirm access to Pro templates.</p>
 
   <h3>Free usage counter</h3>
   <p>The number of free swaps you have left is stored in your device's Keychain.</p>
@@ -106,6 +106,7 @@
     <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers and automated content safety checks with Amazon Rekognition (EU, Frankfurt region)</td></tr>
     <tr><td><a href="https://wavespeed.ai/static/privacy">WaveSpeed AI</a></td><td>AI processing of photo and video face swaps</td></tr>
     <tr><td><a href="https://posthog.com/privacy">PostHog</a></td><td>Product analytics (EU hosting)</td></tr>
+    <tr><td><a href="https://www.revenuecat.com/privacy">RevenueCat</a></td><td>Subscription management and purchase verification</td></tr>
     <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Subscriptions, payments and App Attest</td></tr>
   </table>
   <p>These providers process data under their own privacy policies. We ask our AI processing partner to delete uploaded images and generated results as soon as the result has been delivered; otherwise its own retention period of at most 7 days applies, as described in section 4. We do not allow our providers to use your photos for advertising.</p>
@@ -118,6 +119,7 @@
     <li><strong>Swap job records:</strong> deleted automatically within 7 days.</li>
     <li><strong>App Attest installation records:</strong> kept while needed to protect the service.</li>
     <li><strong>Analytics data:</strong> kept for up to 12 months.</li>
+    <li><strong>Subscription records at RevenueCat:</strong> kept while you have a subscription and as long as needed for accounting and to restore purchases.</li>
     <li><strong>Content reports:</strong> kept as long as needed to review the report and protect the App.</li>
     <li><strong>Support emails:</strong> kept as long as needed to resolve your request.</li>
   </ul>
