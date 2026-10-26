@@ -41,19 +41,20 @@
 <body>
 <main>
   <h1>Revis Privacy Policy</h1>
-  <p class="meta">Effective date: October 23, 2026</p>
+  <p class="meta">Effective date: October 26, 2026</p>
 
-  <p>This Privacy Policy explains how the Revis mobile application and its related services (the "App") handle your information. The App is operated by NouSphere Labs ("we", "us" or the "Service Provider").</p>
+  <p>This Privacy Policy explains how the Revis mobile application and its related services (the "App") collect, use and share information. The App is operated by NouSphere Labs, Inc., a Delaware corporation ("NouSphere Labs", "we", "us" or "our"). If you have questions, contact us at <a href="mailto:info@nouspherelabs.com">info@nouspherelabs.com</a>.</p>
 
   <div class="summary">
     <strong>In short</strong>
     <ul>
       <li>We do not require an account. We do not ask for your name, email or phone number to use the App.</li>
       <li>Before your first swap, the App asks for your permission to send the photos you choose to our AI processing partner, WaveSpeed AI. Photos are used only to create your face swap. As soon as your result is on your device, we delete your photos and the result from WaveSpeed AI's servers, and in any case they are deleted within 7 days. We do not keep copies on our own servers.</li>
-      <li>To keep the App safe, photos are automatically checked for nudity, sexual, graphic violent and hateful content before processing.</li>
+      <li>We do not collect, keep or sell biometric identifiers, we do not identify you from your face, and we do not use your photos to train AI models.</li>
+      <li>To keep the App safe and working, photos are automatically checked for nudity, sexual, graphic violent and hateful content, and to confirm that a face is visible.</li>
       <li>Your results and history are stored on your device.</li>
-      <li>We use privacy-friendly product analytics (PostHog, EU servers) that is not linked to your identity. We do not track you across other companies' apps or websites.</li>
-      <li>We do not sell your personal information.</li>
+      <li>We use privacy-friendly product analytics that is not linked to your identity. We do not track you across other companies' apps or websites.</li>
+      <li>We do not sell your personal information and we do not share it for targeted advertising.</li>
     </ul>
   </div>
 
@@ -62,10 +63,15 @@
   <h3>Photos and videos you select</h3>
   <p>When you create a face swap, the photo containing your face and the selected template (a photo or video from our catalog, or a photo you choose) are sent over an encrypted connection to our server and then to our AI processing partner, WaveSpeed AI, which generates the result. These images are used only to produce the result you asked for.</p>
   <p>A few seconds after the App has downloaded your result, it asks our server to delete the job, including your photos and the result, from WaveSpeed AI. If that request does not go through (for example, because you closed the App or lost your connection), WaveSpeed AI deletes the job automatically within 7 days.</p>
-  <h3>Content safety checks</h3>
-  <p>To prevent abuse, our server checks the photos you send, and photo results before they are returned to you, for nudity, sexual, graphic violent and hateful content using Amazon Rekognition (part of Amazon Web Services, EU region). The check runs automatically, its result is not used to identify you, and the images are not stored by the check. If a photo does not pass, it is not sent to WaveSpeed AI (or a result is deleted from WaveSpeed AI right away) and we record a counter for your installation. After repeated violations, the installation is blocked from creating swaps. You can contact us if you believe this happened by mistake.</p>
   <p>The App asks for your explicit permission before your first swap and only sends photos after you agree. If you do not agree, no photos leave your device. You can withdraw your permission at any time in the App under Profile &gt; Privacy &gt; AI Processing Permission; the App will then ask again before sending any photo.</p>
-  <p>We do not use your photos to identify you, we do not build facial recognition profiles, and we do not use your photos to train AI models.</p>
+
+  <h3>Automated photo checks</h3>
+  <p>Before a photo is sent to WaveSpeed AI, our server checks it automatically using Amazon Rekognition (part of Amazon Web Services, EU region):</p>
+  <ul>
+    <li><strong>Content safety:</strong> the photos you send, and photo results before they are returned to you, are checked for nudity, sexual, graphic violent and hateful content. If a photo does not pass, it is not sent to WaveSpeed AI (or a result is deleted from WaveSpeed AI right away) and we record a counter for your installation. After repeated violations, the installation is blocked from creating swaps. You can contact us if you believe this happened by mistake.</li>
+    <li><strong>Face check:</strong> the photos are checked to confirm that a face is visible and, for the photo of your face, whether glasses or sunglasses cover it, so that the App can ask you for a better photo instead of producing a poor result. This check only detects whether a face is present; it does not identify you or compare your face with any other face.</li>
+  </ul>
+  <p>These checks run automatically, their results are not used to identify you, and the images are not stored by the checks.</p>
 
   <h3>Results and history</h3>
   <p>Finished face swaps and your swap history are saved on your device. You can delete them in the App at any time. Deleting the App also removes them, unless you have saved them to your photo library.</p>
@@ -81,13 +87,12 @@
 
   <h3>Analytics</h3>
   <p>The App uses PostHog, hosted in the European Union, to understand how the App is used. It collects usage events such as features used, swaps started and completed, subscription events and content reports, together with the app version, device model and operating system. Events are tied to a random identifier created by the App, not to your name, email or photos, and are not linked to your identity. Like any internet service, PostHog receives your device's IP address when events are sent; we do not use it to identify you. We do not use analytics data for advertising and we do not track you across other companies' apps or websites, so the App does not show the iOS tracking prompt.</p>
-  <p>We process analytics data on the basis of our legitimate interest in keeping the App working and improving it. You can object at any time by contacting us.</p>
 
   <h3>Content reports</h3>
   <p>If you report a result in the App, we receive the reason you selected and whether it was a photo or a video. The reported image or video itself is not sent to us. If you choose to email us more details, we receive your email as described below.</p>
 
   <h3>Messages you send us</h3>
-  <p>If you contact us by email, we receive your email address and the content of your message, and we use them only to reply to you.</p>
+  <p>If you contact us by email, we receive your email address and the content of your message, and we use them only to reply to you and to keep a record of your request.</p>
 
   <h2>2. How we use information</h2>
   <ul>
@@ -96,23 +101,29 @@
     <li>To protect the App and its users from fraud and abuse.</li>
     <li>To understand how the App is used and improve it.</li>
     <li>To review reports of misuse, automatically filter objectionable content and keep the App safe.</li>
-    <li>To respond to your support requests and to comply with legal obligations.</li>
+    <li>To respond to your support and privacy requests and to comply with legal obligations.</li>
   </ul>
+  <p>We do not use your information for targeted advertising, and we do not make decisions about you based solely on automated processing that produce legal or similarly significant effects. The automated photo checks described above only decide whether a photo can be processed.</p>
 
-  <h2>3. Service providers</h2>
-  <p>We share information only with providers that help us run the App, and only as needed for that purpose:</p>
+  <h2>3. How we share information</h2>
+  <p>We share information only with service providers that help us run the App, and only as needed for that purpose. They are contractually or by their terms limited in how they may use it:</p>
   <table>
     <tr><th>Provider</th><th>Purpose</th></tr>
-    <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers and automated content safety checks with Amazon Rekognition (EU, Frankfurt region)</td></tr>
+    <tr><td><a href="https://aws.amazon.com/privacy/">Amazon Web Services</a></td><td>Hosting our servers and automated photo checks with Amazon Rekognition (EU, Frankfurt region)</td></tr>
     <tr><td><a href="https://wavespeed.ai/static/privacy">WaveSpeed AI</a></td><td>AI processing of photo and video face swaps</td></tr>
     <tr><td><a href="https://posthog.com/privacy">PostHog</a></td><td>Product analytics (EU hosting)</td></tr>
     <tr><td><a href="https://www.revenuecat.com/privacy">RevenueCat</a></td><td>Subscription management and purchase verification</td></tr>
     <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Subscriptions, payments and App Attest</td></tr>
   </table>
-  <p>These providers process data under their own privacy policies. We ask our AI processing partner to delete uploaded images and generated results as soon as the result has been delivered; otherwise its own retention period of at most 7 days applies, as described in section 4. We do not allow our providers to use your photos for advertising.</p>
-  <p>We may also disclose information if required by law, or if we believe in good faith that disclosure is necessary to protect our rights, your safety or the safety of others, or to investigate fraud.</p>
+  <p>We ask our AI processing partner to delete uploaded images and generated results as soon as the result has been delivered; otherwise its own retention period of at most 7 days applies. We do not allow our providers to use your photos for advertising or to train AI models.</p>
+  <p>We may also disclose information if required by law, subpoena or other legal process, or if we believe in good faith that disclosure is necessary to protect our rights, your safety or the safety of others, or to investigate fraud. If we are involved in a merger, acquisition or sale of assets, information may be transferred as part of that transaction, subject to this Privacy Policy.</p>
+  <p><strong>We do not sell your personal information, and we do not "share" it for cross-context behavioral advertising</strong>, as those terms are defined under California and other U.S. state privacy laws. We have not done so in the past 12 months.</p>
 
-  <h2>4. Data retention</h2>
+  <h2>4. Biometric information</h2>
+  <p>Creating a face swap requires analyzing the faces in the photos you choose. This analysis happens only while your swap and the automated checks described above are being processed. We do not collect, store or keep face geometry, face templates or any other biometric identifier, we do not use faces to identify or recognize anyone, and we never sell, lease, trade or otherwise profit from biometric information.</p>
+  <p>The App asks for your consent before any photo is sent for processing, and you confirm that you have the permission of everyone whose face appears in your photos. Photos and results are deleted from our AI processing partner as soon as your result is delivered, and in any case within 7 days, as described in section 5. This section is intended to meet the requirements of laws such as the Illinois Biometric Information Privacy Act, the Texas Capture or Use of Biometric Identifier Act and the Washington biometric privacy law, to the extent they apply.</p>
+
+  <h2>5. Data retention</h2>
   <ul>
     <li><strong>Photos and videos you select, and your results:</strong> never stored on our own servers. Deleted from WaveSpeed AI as soon as your result is on your device, and at the latest within 7 days.</li>
     <li><strong>Content safety records:</strong> a count of rejected photos and, if applicable, a block flag for your installation, kept while needed to protect the service.</li>
@@ -121,27 +132,46 @@
     <li><strong>Analytics data:</strong> kept for up to 12 months.</li>
     <li><strong>Subscription records at RevenueCat:</strong> kept while you have a subscription and as long as needed for accounting and to restore purchases.</li>
     <li><strong>Content reports:</strong> kept as long as needed to review the report and protect the App.</li>
-    <li><strong>Support emails:</strong> kept as long as needed to resolve your request.</li>
+    <li><strong>Support and privacy requests:</strong> kept as long as needed to resolve your request and, for privacy requests, for 24 months as required by law.</li>
   </ul>
 
-  <h2>5. International transfers</h2>
-  <p>Our servers are located in the European Union. Some of our providers may process data in other countries, including the United States. Where required by law, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+  <h2>6. Your U.S. state privacy rights</h2>
+  <p>Residents of California, and of other U.S. states with comprehensive privacy laws (such as Colorado, Connecticut, Delaware, Oregon, Texas, Utah and Virginia), have rights over their personal information. Depending on your state, you may have the right to:</p>
+  <ul>
+    <li>know and access the personal information we have about you, and receive a portable copy;</li>
+    <li>correct inaccurate personal information;</li>
+    <li>delete personal information;</li>
+    <li>opt out of the sale of personal information, sharing for targeted advertising and profiling (we do not do any of these);</li>
+    <li>limit the use of sensitive personal information (we only use it to provide the App you request); and</li>
+    <li>not be discriminated against for exercising these rights.</li>
+  </ul>
+  <p><strong>Categories of personal information.</strong> In the past 12 months we have collected the following categories, from you and your device, for the purposes described in section 2, and disclosed them to the service providers listed in section 3 for those business purposes:</p>
+  <table>
+    <tr><th>Category</th><th>Examples</th></tr>
+    <tr><td>Identifiers</td><td>Random installation and analytics identifiers, IP address, email address if you contact us</td></tr>
+    <tr><td>Commercial information</td><td>Subscription purchase and renewal information from Apple</td></tr>
+    <tr><td>Internet or other electronic activity</td><td>Features used, swaps started and completed, app version, device model and operating system</td></tr>
+    <tr><td>Audio, electronic or visual information</td><td>Photos and videos you choose for a swap, processed only to create it and deleted as described above</td></tr>
+  </table>
+  <p><strong>How to make a request.</strong> Email <a href="mailto:info@nouspherelabs.com">info@nouspherelabs.com</a> with the subject "Privacy request". Because the App has no accounts, we may ask for information that lets us match your request to the data we hold, and we will not ask for more than we need. Most of your data is stored only on your device, and you can delete it yourself by deleting your swaps or the App. You may use an authorized agent; we may ask the agent for proof of your authorization. We respond within 45 days, or as otherwise required by law.</p>
+  <p><strong>Appeals.</strong> If we decline your request, you can appeal by replying to our decision with the subject "Privacy appeal". We will respond within the time required by your state's law. If you are not satisfied, you may contact your state attorney general.</p>
+  <p><strong>Do Not Track and Global Privacy Control.</strong> We do not track you across other companies' apps or websites and do not sell or share personal information, so there is nothing for these signals to opt you out of. We treat a Global Privacy Control signal, where we receive one, as a valid opt-out request.</p>
 
-  <h2>6. Your rights</h2>
-  <p>Depending on where you live, you may have the right to access, correct, delete or receive a copy of your personal data, to object to or restrict certain processing, and to withdraw consent at any time. Residents of California have the right to know, delete and opt out of the sale or sharing of personal information, and the right to non-discrimination for exercising these rights. We do not sell personal information.</p>
-  <p>Because the App does not use accounts, most data is stored only on your device and you can delete it yourself. To make a request, contact us at <a href="mailto:saygivere@gmail.com">saygivere@gmail.com</a>. You also have the right to complain to your local data protection authority.</p>
+  <h2>7. Users outside the United States</h2>
+  <p>We are based in the United States. Our servers are located in the European Union (Amazon Web Services, Frankfurt), and some of our providers process data in the United States and other countries. Where required, we rely on appropriate safeguards for international transfers, such as the European Commission's Standard Contractual Clauses.</p>
+  <p>If you are in the European Economic Area, the United Kingdom or Switzerland, we process your personal data on the basis of your consent (sending photos for AI processing, which you can withdraw at any time in the App), the performance of our contract with you (providing swaps and subscriptions), and our legitimate interests (keeping the App secure, preventing abuse and understanding how the App is used; you can object by contacting us). You also have the right to access, correct, delete or receive a copy of your data, to restrict or object to processing, and to complain to your local data protection authority.</p>
 
-  <h2>7. Children</h2>
-  <p>The App is not intended for children under 13, or a higher age where required by local law. We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+  <h2>8. Children</h2>
+  <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13 (or a higher age where required by local law). If you believe a child has provided us with personal information, contact us and we will delete it.</p>
 
-  <h2>8. Security</h2>
-  <p>All data is sent over encrypted connections. Our API keys and processing partners are accessed only from our servers, never from the App. No method of transmission or storage is completely secure, but we work to protect your information. If a data breach affects your personal data, we will notify you as required by law.</p>
+  <h2>9. Security</h2>
+  <p>All data is sent over encrypted connections. Our API keys and processing partners are accessed only from our servers, never from the App. No method of transmission or storage is completely secure, but we use reasonable safeguards to protect your information. If a data breach affects your personal information, we will notify you and the authorities as required by law.</p>
 
-  <h2>9. Changes to this policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will post the new version on this page with a new effective date and, where required by law, ask for your consent to material changes.</p>
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will post the new version on this page with a new effective date. If we make material changes, we will provide notice in the App or by other appropriate means and, where required by law, ask for your consent.</p>
 
-  <h2>10. Contact</h2>
-  <p>Questions about this Privacy Policy or your data: <a href="mailto:saygivere@gmail.com">saygivere@gmail.com</a></p>
+  <h2>11. Contact</h2>
+  <p>NouSphere Labs, Inc.<br>Email: <a href="mailto:info@nouspherelabs.com">info@nouspherelabs.com</a></p>
 
   <footer>See also: <a href="terms.html">Terms of Use</a></footer>
 </main>
